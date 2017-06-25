@@ -93,7 +93,7 @@
 					<li><a href="{{ site.url }}/Meme/">RIP Pepe</a></li>
 					<li><a href="{{ site.url }}/Review/">Object Oriented Ontology</a></li>
 			</li>
-			{% for link in site.data.navigation %}
+						{% for link in site.data.navigation %}
 		    {% if link.url contains 'http' %}
 		        {% assign domain = '' %}
 		        {% else %}
@@ -102,4 +102,10 @@
 		    <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.title }}</a></li>
 		  {% endfor %}
 		</ul><!-- /.dl-menu -->
+			<li>
+				<a href="#">References</a>
+				<ul class="dl-submenu">
+		</ul><!-- /.dl-menu -->
+			</li>
+
 	</nav><!-- /.dl-menuwrapper -->
